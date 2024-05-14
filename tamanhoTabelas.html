@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    Essa tabelas tem: border="2":
+    <table border="2">
+        <tr>
+            <td width="100">width="100"</td>
+            <td align="middle" width="200">width="200" (pixels) + Centralização</td>
+        </tr>
+    </table>
+    <br>
+    
+    Essa tabela tem tamanho de suas colunas definidos em porcentagem:
+    <table border=2>
+        <tr>
+        <td width=25%>width=25%</td>
+        <td align="middle" width=75%>width=75%</td>
+        </tr>
+    </table>
+    <br>
+
+    Essa tabele tem cores de fundo definido por código hexadecimal ou por nome da cor em inglês:
+    <table border=2>
+        <tr>
+            <td width=150 bgcolor="#FF0000">Vermelho</td> <!-- td = table detail> -->
+            <td width=150 bgcolor="#008000">Verde</td>
+            <td width=150 bgcolor="#0000FF">Azul</td>
+        </tr>
+        <tr>
+            <td align=middle bgcolor=blue>Azul</td>
+            <td align=middle bgcolor=red>Vermelho</td>
+            <td align=middle bgcolor=green>Verde</td>
+        </tr>
+    </table>
+    <br>
+
+    Essa tabela tem o padding e o cellspacing iquais a 0:
+    <table border=1 cellspacing=0 cellpadding=0>
+        <tr>
+            <td width=150 bgcolor=red>Vermelho </td>
+            <td width=150 bgcolor=red>Vermelho</td>
+        </tr>
+        <tr>
+            <td width=150 bgcolor=blue>Azul</td>
+            <td width=150 bgcolor=blue> Azul</td>
+        </tr>
+    </table>
+    <br>
+
+    Essa tabela tem legenda centralizada em relção a tabela e a tag th que siginifica "table header" que exibe o conteudo em negrito:
+    <table border=1 cellspacing=2 cellpadding=6>
+        <caption align="Bottom">Legenda da Tabela</caption> <!-- Introduz uma legenda na tabela -->
+        <tr>
+            <th>Conteúdo em negrito</th> <!-- Insere o texto na forma de cabeçalho (negrito)-->
+        </tr>
+        <tr>
+            <th>Conteúdo em negrito</th>
+        </tr>
+    </table>
+    <br>
+
+    Essa tabela aglutina colunas e linhas com o "colspan" e "rowspan":<br>
+    Colspan:
+    <table border=2 cellpadding=2>
+        <tr>
+            <td colspan=2>Exemplo do uso do colspan</td>
+        <tr>
+            <td>CÉLULA 1</td>
+            <td>CÉLULA 2</td>
+        </tr>
+    </table>
+    <br>
+    Rowspan
+    <table border=2 cellpadding=2>
+        <tr>
+            <td rowspan=2>Exemplo do uso do rowspan</td>
+            <td>CÉLULA 1</td>
+        </tr>
+        <tr>
+            <td>CÉLULA 2</td>
+        </tr>
+    </table>
+    <br>
+
+    Adicionando imagem de fundo na célula:
+    <table background=".\Captura de tela 2024-03-04 081456.png" border=5>
+        <tr>
+            <td>
+                <h1>Adicionar imagem de fundo</h1>
+            </td>
+        </tr>
+    </table>   
+</body>
+<br>
+<a href="./index.html">Retornar à Página Inicial</a>
+</html>

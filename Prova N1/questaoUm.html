@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 1</title>
+</head>
+<body>
+    <center>
+        <h1>Tabela 1</h1>
+    </center>
+    <hr>
+
+    <table border="1" cellspacing="1" cellpadding="10" align="center">
+        <!-- Inserção de Legenda -->
+        <caption align="up">Legenda: Tabela 1</caption>
+
+        <!-- Inserindo as linhas azuis -->
+        <tr bgcolor="blue" height="20">
+            <td rowspan="2" colspan="1"  width="80"></td>
+            <td width="80"></td>
+            <td width="80"></td>
+            <td width="80"></td>
+            <td width="80"></td>
+            <td width="80"></td>
+        </tr>
+        <tr bgcolor="yellow" height="20">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- Inserindo as linhas amarelas -->
+        <tr bgcolor="yellow" height="20"> <!-- Linha 1 -->
+            <td rowspan="3" colspan="3"></td>
+            <td colspan="2"></td>
+            <td></td>
+        </tr>
+        <tr bgcolor="yellow" height="20"> <!-- Linha 2 -->
+            <td bgcolor="white" align="center">VAZIO</td>
+            <td rowspan="2" colspan="2"></td>
+        </tr>
+        <tr bgcolor="yellow" height="20"> <!-- Linha 3 -->
+            <td rowsspan="2"></td>
+        </tr>
+
+        <!-- Inserindo as linhas cianas -->
+        <tr bgcolor="cyan" height="20"> <!-- Linha 1 -->
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td ></td>
+            <td rowspan="3"></td>
+        </tr>
+        <tr bgcolor="cyan" height="20"> <!-- Linha 2 -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr bgcolor="cyan" height="20"> <!-- Linha 3 -->
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- Criação da segunda tabela -->
+    <center>
+        <h1>Tabela 2</h1>
+    </center>
+    <hr>
+    
+    <table border="1" cellpadding="5" cellspacing="1" align="right">
+        <tr>
+            <th rowspan="2" bgcolor="green" align="center">Item</td>
+            <th colspan="2" bgcolor="yellow" align="center">Valores</th>
+            <th rowspan="2" bgcolor="cyan" align="center">Total</th>
+            <th colspan="2" bgcolor="purple" align="center">Percentual</th>
+        </tr>
+        <tr align="center">
+            <th bgcolor="yellow">A</th>
+            <th bgcolor="yellow">B</th>
+            <th bgcolor="purple">C</th>
+            <th bgcolor="purple">D</th>
+        </tr>
+        <tr align="center">
+            <td bgcolor="lightgreen">Item 1</td>
+            <td bgcolor="lightyellow">10</td>
+            <td bgcolor="lightyellow">20</td>
+            <td bgcolor="lightcyan">30</td>
+            <td bgcolor="lightpink">33.3%</td>
+            <td bgcolor="lightpink">66.7%</td>
+        </tr>
+        <tr align="center">
+            <td bgcolor="lightgreen">Item 2</td>
+            <td bgcolor="lightyellow">5</td>
+            <td bgcolor="lightyellow">15</td>
+            <td bgcolor="lightcyan">20</td>
+            <td bgcolor="lightpink">33.3%</td>
+            <td bgcolor="lightpink">66.7%</td>
+        </tr>
+        <tr align="center">
+            <td bgcolor="lightgreen">Item 3</td>
+            <td bgcolor="lightyellow">15</td>
+            <td bgcolor="lightyellow">25</td>
+            <td bgcolor="lightcyan">40</td>
+            <td bgcolor="lightpink">33.3%</td>
+            <td bgcolor="lightpink">66.7%</td>
+        </tr>
+        <tr align="center">
+            <td bgcolor="lightgreen">Item 4</td>
+            <td bgcolor="lightyellow">20</td>
+            <td bgcolor="lightyellow">10</td>
+            <td bgcolor="lightcyan">30</td>
+            <td bgcolor="lightpink">33.3%</td>
+            <td bgcolor="lightpink">66.7%</td>
+        </tr>
+        <caption align="bottom">Legenda: Tabela 2</caption>
+    </table>
+</body>
+</html>

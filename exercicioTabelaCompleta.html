@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <table border="1" cellpadding="5" cellspacing="1" align="center">
+        <tr>
+            <td rowspan="2" colspan="2" bgcolor="white" background=".\Captura de tela 2024-03-05 173845.png" ></td>
+            <th colspan="3" bgcolor="#ffff00" align="center">Demografia</th>
+        </tr>
+        <tr bgcolor="#ffff00" align="center">
+            <th >Homens</th>
+            <th>Meninas</th>
+            <th>Professor</th>
+        </tr>
+        <tr bgcolor="#ffff00" align="center">
+            <th rowspan="4">Turmas</th>
+            <th>A</th>
+            <td>20</td>
+            <td>5</td>
+            <td>João <br> Pedro</td>
+        </tr>
+        <tr bgcolor="#ffff00" align="center">
+            <th>B</th>
+            <td>21</td>
+            <td>3</td>
+            <td>idem</td>
+        </tr>
+        <tr bgcolor="#ffff00" align="center">
+            <th>C</th>
+            <td>25</td>
+            <td>2</td>
+            <td>Maria <br> João</td>
+        </tr>
+        <tr bgcolor="#ffff00" align="center" >
+            <th>D</th>
+            <td>20</td>
+            <td>0</td>
+            <td>idem</td>
+        </tr>
+        <tr bgcolor="#ffff00" align="center" >
+            <th colspan="2">Total</th>
+            <td>86</td>
+            <td>4</td>
+            <td>2</td>
+        </tr>
+    </table>
+    <br>
+    
+    <a href="./index.html">Retornar à Página Principal</a>
+</body>
+
+<!-- Dessa forma conseguimos fazer com que o background da célula
+se ajuste ao tamanho da célula e não fique repetindo caso a figura
+seja menor que o tamanho da célula -->
+<style>
+    td {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+</html>

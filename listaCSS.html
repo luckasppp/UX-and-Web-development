@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul>
+        Lista sem Ordenação
+        <li>Intro Web</li>
+        <li>Prog I</li>
+        <li>Lógica</li>
+    </ul>
+
+    <ol type="1" start="1">
+        Lista com Ordenação
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Terceiro</li>
+    </ol>
+
+    <p>Este é o parágrafo que tem a cor rosa pela exclusão e text-decoration deixando sublinhado</p>
+    <p class="especial">Este é parágrafo pertence à uma classe, logo continua preto</p>
+    <p>Este é o parágrafo que tem a cor rosa pela exclusão e text-decoration deixando sublinhado</p>
+
+    <a href="./index.html">Retornar à Página Principal</a>
+
+</body>
+
+<style>
+    ol{
+        list-style: upper-roman;
+    }
+    ul{
+        list-style: none;
+        list-style-image:url(marca.png);
+    }
+    p:not(.especial) {
+        color: pink;
+        text-decoration: underline;
+    }
+    
+
+</style>
+</html>
