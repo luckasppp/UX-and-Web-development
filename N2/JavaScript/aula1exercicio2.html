@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    <h1>Escreva seu nome e sobrenome</h1>
+    <form name="area">
+        <input type="text" id="name">
+        <input type="text" id="lastName">
+        <button onclick="mensagem()">Clique aqui.</button>
+    </form>
+
+    <script>
+        function mensagem() {
+            var name = document.area.name.value;
+            var lastName = document.area.lastName.value;
+            alert("Oi " + name + " " + lastName + ". Eu sou um robô!");
+        }
+    </script>
+    
+</body>
+</html>
