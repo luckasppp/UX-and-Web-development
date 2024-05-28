@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+<body>
+    <h1>Selecione um botão para que esse texto mude de cor:</h1>
+
+    <button type="button" value="blue" onclick="trocaCor(value);">Azul</button>
+    <button type="button" value="red" onclick="trocaCor(value);">Vermelho</button>
+
+    <script>
+        function trocaCor(value) {
+            document.querySelector("h1").style.color = value;
+        }
+    </script>
+    
+</body>
+</html>
