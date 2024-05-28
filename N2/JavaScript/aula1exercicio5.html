@@ -4,15 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questão 5</title>
-    <style>
-        .linha {
-            display: block;
-            white-space: nowrap;
-        }
-        .numero {
-            margin-right: 5px;
-        }
-    </style>
 </head>
 <body>
     <h1>Insira um número:</h1>
@@ -27,17 +18,17 @@
         function criarPiramide() {
             var valor = document.getElementById("valor").value;
             var piramideDiv = document.getElementById("piramide");
-            piramideDiv.innerHTML = "";  // Limpar conteúdo anterior
+            piramideDiv.innerHTML = "";  // Limpar conteúdo (pirâmide) anterior
 
             for (var i = 0; i < valor; i++) {
                 var linha = document.createElement("div");
-                linha.className = "linha";
                 for (var j = 0; j < i + 1; j++) {
                     var numero = document.createElement("span");
-                    numero.className = "numero";
+                    numero.style.marginRight = "5px";  // Estilo inline para substituir a classe .numero
                     numero.innerText = i+1;
                     linha.appendChild(numero);
                 }
+                linha.style.whiteSpace = "nowrap";  // Estilo inline para substituir a classe .linha
                 piramideDiv.appendChild(linha);
             }
         }
