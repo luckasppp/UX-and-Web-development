@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+    <style>
+        .linha {
+            display: block;
+            white-space: nowrap;
+        }
+        .numero {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insira um número:</h1>
+    <form name="area" onsubmit="return false;">
+        <input type="text" id="valor">
+        <button type="button" onclick="criarPiramide()">Gerar Pirâmide</button>
+    </form>
+
+    <div id="piramide"></div>
+
+    <script>
+        function criarPiramide() {
+            var valor = document.getElementById("valor").value;
+            var piramideDiv = document.getElementById("piramide");
+            piramideDiv.innerHTML = "";  // Limpar conteúdo anterior
+
+            for (var i = 0; i < valor; i++) {
+                var linha = document.createElement("div");
+                linha.className = "linha";
+                for (var j = 0; j < i + 1; j++) {
+                    var numero = document.createElement("span");
+                    numero.className = "numero";
+                    numero.innerText = i+1;
+                    linha.appendChild(numero);
+                }
+                piramideDiv.appendChild(linha);
+            }
+        }
+    </script>
+</body>
+</html>
