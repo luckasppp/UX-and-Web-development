@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+<body>
+
+    <form name="area">
+        <input type="text" id="valor">
+        <button onclick="mensagem()">Verificar</button>
+    </form>
+
+    <script>
+        function mensagem() {
+            var valor = document.area.valor.value;
+            if(valor == "") {
+                alert("O campor está vazio");
+            } else {
+                alert("Você digitou: " + valor);
+            }
+        
+        }
+    </script>
+    
+</body>
+</html>
