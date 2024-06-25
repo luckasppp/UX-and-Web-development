@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerar Tabelas</title>
+    </head>
+    <body>
+        <form id="tableForm">
+            <label for="linhas">Linhas: </label>
+            <input id="linhas" name="linhas">
+            <label for="colunas">Colunas: </label>
+            <input id="colunas" name="colunas">
+            <button type="button" onclick="gerarTabela()">Gerar Tabela</button>
+        </form>
+        <hr>
+
+        <div id="tabelaContainer"></div>
+        
+        <script>
+            function gerarTabela() {
+                const linhas = document.getElementById('linhas').value;
+                const colunas = document.getElementById('colunas').value;
+
+                const tabelaContainer = document.getElementById('tabelaContainer');
+        
+                tabelaContainer.innerHTML = '';
+
+                const table = document.createElement('table');
+        
+                for (let i = 0; i < linhas; i++) {
+                    const tr = document.createElement('tr');
+                    for (let j = 0; j < colunas; j++) {
+                        const td = document.createElement('td');
+                        td.textContent = `${i+1}, ${j+1}`;
+                        tr.appendChild(td);
+                    }
+                    table.appendChild(tr);
+                }
+        
+                tabelaContainer.appendChild(table);
+            }
+        </script>   
+    </body>
+    <style>  
+        table {
+            width: 75%;
+            border: 1px solid black;
+        }
+        th, td {
+            border: 1px solid black;
+        }
+    </style>
+</html>
