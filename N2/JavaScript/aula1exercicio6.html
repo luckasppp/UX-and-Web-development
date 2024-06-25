@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body id="corpo">
+    <form name="area" id="valor">
+        <p>Insira um texto: <input type="text" id="texto"></p>
+        <button onclick="adicionar()">Adicionar</button>
+        <button onclick="removerP()">Remover Parágrafo</button>
+    </form>
+
+    <script>
+        function adicionar() {
+            var texto = document.getElementById("texto").value;
+            var paragrafo = document.createElement("p");
+            var corpo = document.getElementById("corpor");
+
+            paragrafo.innerHTML = texto;
+            corpo.appendChild(paragrafo);
+        }
+    </script>
+</body>
+</html>
